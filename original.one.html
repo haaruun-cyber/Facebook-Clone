@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!--facebook header -->
+    <header class="flex justify-between items-center bg-white p-4 shadow-sm px-6 fixed w-full z-10">
+        <div class="flex items-center gap-4">
+            <i class="fa-brands fa-facebook text-blue-500 bg-white rounded-full text-5xl "></i>
+            <div class="rounded-full p-3 bg-gray-200 flex items-center gap-2">
+                <i class="fa-solid fa-magnifying-glass text-grey-600"></i>
+                <input type="text" placeholder="Search Facebook"/>
+            </div>
+        </div>
+
+        <div class="md:flex items-center gap-10 hidden">
+            <i class="fa-solid fa-house text-3xl text-blue-500 hover:text-blue-800 border-b-2 border-blue-500 transition duration-200 pb-1"></i>
+            <i class="fa-solid fa-users text-3xl text-black hover:text-blue-800 hover:border-b-2 hover:border-blue-800 transition duration-200 pb-1 "></i>
+            <i class="fa-solid fa-video text-3xl text-black hover:text-blue-800 hover:border-b-2 hover:border-blue-800 transition duration-200 pb-1 "></i>
+            <i class="fa-solid fa-store text-3xl text-black hover:text-blue-800 hover:border-b-2 hover:border-blue-800 transition duration-200 pb-1 "></i>
+            <i class="fa-solid fa-gamepad text-3xl text-black hover:text-blue-800 hover:border-b-2 hover:border-blue-800 transition duration-200 pb-1"></i>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4">
+            <i class="fa-solid fa-flag text-2xl bg-gray-200 p-3 rounded-xl"></i>
+            <i class="fa-solid fa-bell bg-gray-200 p-3 rounded-xl text-2xl"></i>
+            <i class="fa-solid fa-envelope bg-gray-200 p-3 rounded-xl text-2xl"></i>
+            <i class="fa-solid fa-ellipsis bg-gray-200 p-3 rounded-xl text-2xl"></i>
+        </div>
+        <!-- humberger menu for mobile -->
+        <button class="md:hidden mr-2 text-blue-500 text-3xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <!-- sidebar 1 -->
+<div class=" sidebar w-1/4 h-screen bg-gray-100 fixed top-0 left-0 p-6 overflow-y-auto mt-20 min-h-screen pb-24">
+  <!-- User Profile -->
+  <div class="flex items-center gap-4 mb-4 text-[23px]">
+    <i class="fa-solid fa-circle-user text-4xl text-gray-200 bg-gray-500 rounded-full border-1 border-green-500"></i>
+    <h2>Ina Dhaqtar</h2>
+  </div>
+
+  <!-- Menu Items -->
+  <nav class="space-y-4 text-[23px]">
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-user-group text-blue-500"></i>
+      <h2>Friends</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-clock-rotate-left text-orange-400 text-3xl"></i>
+      <h2>Memories</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-bookmark text-green-600"></i>
+      <h2>Saved</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-users text-blue-800"></i>
+      <h2>Groups</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-brands fa-youtube text-red-600"></i>
+      <h2>Reels</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-store text-green-600"></i>
+      <h2>Marketplace</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-rss text-yellow-500"></i>
+      <h2>Feeds</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-calendar-days text-purple-600"></i>
+      <h2>Events</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-bullhorn text-pink-500"></i>
+      <h2>Ads Manager</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-store text-green-600"></i>
+      <h2>Marketplace</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-rss text-yellow-500"></i>
+      <h2>Feeds</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-calendar-days text-purple-600"></i>
+      <h2>Events</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-bullhorn text-pink-500"></i>
+      <h2>Ads Manager</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-store text-green-600"></i>
+      <h2>Marketplace</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-rss text-yellow-500"></i>
+      <h2>Feeds</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-calendar-days text-purple-600"></i>
+      <h2>Events</h2>
+    </div>
+    <div class="flex items-center gap-4 hover:bg-gray-200 hover:rounded-full transition pl-1">
+      <i class="fa-solid fa-bullhorn text-pink-500"></i>
+      <h2>Ads Manager</h2>
+    </div>
+  </nav>
+</div>
+      <!-- main contant -->
+       <main class="w-full fixed top-0 md:left-1/4 lg:w-4/8 bg-gray-200 h-screen bg-gray-50 p-6 overflow-y-auto mt-20 pb-24">
+        <!-- first card -->
+        <div class="bg-white p-4 rounded-lg shadow-md mb-6">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-user text-4xl text-gray-200 bg-gray-500 rounded-full mt-4"></i>
+                <input type="text" placeholder="What's on your mind, Ina?" class="border border-gray-300 rounded-full p-2 w-full mt-4" />
+            </div>
+            <hr class="my-4" />
+            <div class="flex justify-between px-8">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-video text-red-600 text-[25px]"></i>
+                    <h3 class="text-[18px]">Live video</h3>
+                </span>
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-images text-green-600 text-[23px]"></i>
+                    <h3>Photo/video</h3>
+                </span>
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-face-smile text-[23px] text-yellow-500"></i>
+                    <h3>Feeling/Activity</h3>
+                </span>
+            </div>
+        </div>
+        <!-- slider -->
+         <div class="flex gap-6 items-center ">
+         <div class="bg-white w-48 h-60 rounded-lg overflow-hidden flex flex-col items-center">
+            <!-- Image -->
+            <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg"  alt="Create Story" class="w-full h-3/4 object-cover rounded-t-lg"/>
+            <!-- Bottom Content -->
+            <div class="flex flex-col items-center justify-center mt-2">
+                <i class="fa-solid fa-square-plus text-blue-800 text-2xl bg-white p-2 mt-[-23px] rounded-full mb-1"></i>
+                <h3 class="text-sm font-semibold">Create Story</h3>
+            </div>
+            </div>
+            <div class="bg-white w-48 h-60 rounded-lg overflow-hidden relative " style="background-image: url('https://i.pinimg.com/736x/4d/ef/ab/4defab87bb669dbe3ce8d88d78e6570b.jpg'); background-size: cover; background-position: center;">
+            <!-- profile Image -->
+            <img src="https://i.pinimg.com/1200x/6f/78/37/6f783730b47da32977cbbfbcb56582ac.jpg"  alt="Story" class="w-11 rounded-full m-2 border-3 border-blue-500"/>
+            <!-- <h3 class="">ina xasan Dhaqtar</h3> -->
+            </div>
+            <div class="bg-white w-48 h-60 rounded-lg overflow-hidden relative " style="background-image: url('https://i.pinimg.com/736x/f7/17/00/f71700588415c60212d851b1fc22d780.jpg'); background-size: cover; background-position: center;">
+            <!-- profile Image -->
+            <img src="https://i.pinimg.com/736x/69/1c/6c/691c6cc8db12e56fdba8dea86e44bea9.jpg"  alt="Story" class="w-11 rounded-full m-2 border-3 border-blue-500"/>
+            <!-- <h3 class="">ina xasan Dhaqtar</h3> -->
+            </div>
+         </div>
+        <!-- start poster -->
+         <div class="bg-white w-full mt-4 rounded-lg overflow-hidden h-190 shadow-md">
+              <!-- top poster -->
+              <div class="flex justify-between items-center pr-4 border-b-2 border-gray-300">
+                <div class="flex items-center">
+                <!-- profile Image -->
+                <img src="https://i.pinimg.com/1200x/bc/0b/f2/bc0bf2b1911d428ecda89576c15dbbc6.jpg" alt="story" class="w-12 rounded-full m-4 border-3 border-blue-500"/>
+                <!-- profile text -->
+                 <div>
+                <div class="flex items-center gap-3">
+                  <h2 class="font-semibold uppercase">laliga</h2>
+                  <i class="fa-solid fa-certificate text-blue-500"></i>
+                </div>
+                <div class="flex items-center gap-3">
+                  <h2 class="uppercase text-gray-500">sponsored</h2>
+                  <i class="fa-solid fa-earth-americas text-gray-500"></i>
+                </div>
+                </div>
+                </div>
+                <!-- two icons -->
+                <div>
+                   <i class="fa-solid fa-ellipsis text-gray-600 text-2xl"></i>
+                   <i class="fa-solid fa-xmark  text-gray-600 text-2xl ml-3"></i>
+                </div>
+              </div>
+              <!-- poster image -->
+               <img src="https://scontent.fmgq1-2.fna.fbcdn.net/v/t1.6435-9/47290770_2069661736403708_5079297030841434112_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UHskoZ_AzcIQ7kNvwH6cM78&_nc_oc=Adk6LBFtZ2nQuSDaeZDse9LWR7KW0GFoBNm_p2EPRQXTW0RVNoAB0fCNcRXnpr0MIOg&_nc_zt=23&_nc_ht=scontent.fmgq1-2.fna&_nc_gid=5XMlOtWUuQaxcpkFgLAEnA&oh=00_AfYaD0DRtNVENj_t72nN7b5d9q-giGBGI1JLN-xdQm7VkQ&oe=68E9EE1D" 
+                alt="image" class="w-full h-screen object-cover"/>
+              <!-- bottom poster -->
+               <div class="flex justify-between items-center border-b-2 border-gray-300 px-4">
+               <div class="flex items-center gap-1 p-1">
+                <div>
+                <i class="fa-solid fa-thumbs-up text-blue-500 text-[20px]"></i>
+                <i class="fa-solid fa-heart text-rose-600 text-[20px]"></i>
+                </div>
+                <h1 class="text-gray-500 text-[20px]">90k</h1>
+               </div>
+               <div class="flex items-center gap-2 text-gray-500">
+                <h2>824 comment</h2>
+                <h2>661 shares</h2>
+               </div>
+               </div>
+                <!-- like comment share -->
+                 <div class="flex justify-evenly items-center pt-2">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-thumbs-up text-[20px] text-gray-500"></i>
+                    <h3 class="uppercase text-gray-500">like</h3>
+                  </div>
+                   <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-comment text-[20px] text-gray-500"></i>
+                    <h3 class="uppercase text-gray-500">comment</h3>
+                  </div>
+                   <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-share text-[20px] text-gray-500"></i>
+                    <h3 class="uppercase text-gray-500">share</h3>
+                  </div>
+                 </div>
+         </div>
+         <!-- end poster -->
+
+          <!-- start poster -->
+         <div class="bg-white w-full mt-4 rounded-lg overflow-hidden h-190 shadow-md">
+              <!-- top poster -->
+              <div class="flex justify-between items-center pr-4 border-b-2 border-gray-300">
+                <div class="flex items-center">
+                <!-- profile Image -->
+                <img src="https://scontent.fmgq1-2.fna.fbcdn.net/v/t39.30808-1/339152842_6015168285239108_6508317237867942077_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=uggEj_KXXuQQ7kNvwHpI96e&_nc_oc=Adk9zFm5sO-0bk3BR7gAEg3i83Rc0HNJsYvbyD21HQp8W1L2nPKNOAF01X0ka3WdIcU&_nc_zt=24&_nc_ht=scontent.fmgq1-2.fna&_nc_gid=ygb3QF8ExIiwHLIgJLos2w&oh=00_AfbbOYsYO2Kk-kPjySrh5zw2zjOtyNL8Nd9SGLz3-bEMpw&oe=68C8718A" alt="story" class="w-12 rounded-full m-4 border-3 border-blue-500"/>
+                <!-- profile text -->
+                 <div>
+                <div class="flex items-center gap-3">
+                  <h2 class="font-semibold uppercase">laliga</h2>
+                  <i class="fa-solid fa-certificate text-blue-500"></i>
+                </div>
+                <div class="flex items-center gap-3">
+                  <h2 class="uppercase text-gray-500">sponsored</h2>
+                  <i class="fa-solid fa-earth-americas text-gray-500"></i>
+                </div>
+                </div>
+                </div>
+                <!-- two icons -->
+                <div>
+                   <i class="fa-solid fa-ellipsis text-gray-600 text-2xl"></i>
+                   <i class="fa-solid fa-xmark  text-gray-600 text-2xl ml-3"></i>
+                </div>
+              </div>
+              <!-- poster image -->
+               <img src="https://scontent.fmgq1-2.fna.fbcdn.net/v/t39.30808-6/546833680_764913249660813_2434147917657151801_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zM275EokI9wQ7kNvwFZdddx&_nc_oc=AdkSvrSiedwSseeeLwImYTmbvSEXaCvypYYI96Dkk02YtAciq1Ls8ojKB-k_0EaZEio&_nc_zt=23&_nc_ht=scontent.fmgq1-2.fna&_nc_gid=-DzjYZlKrp4J3GtQtHpJRw&oh=00_AfY-tWsx7ekwhCjcmCmmXz8t-R19xlySV5wYSydWt3kiiw&oe=68C860E9" 
+                alt="image" class="w-full h-screen object-cover"/>
+              <!-- bottom poster -->
+               <div class="flex justify-between items-center border-b-2 border-gray-300 px-4">
+               <div class="flex items-center gap-1 p-1">
+                <div>
+                <i class="fa-solid fa-thumbs-up text-blue-500 text-[20px]"></i>
+                <i class="fa-solid fa-heart text-rose-600 text-[20px]"></i>
+                </div>
+                <h1 class="text-gray-500 text-[20px]">90k</h1>
+               </div>
+               <div class="flex items-center gap-2 text-gray-500">
+                <h2>824 comment</h2>
+                <h2>661 shares</h2>
+               </div>
+               </div>
+                <!-- like comment share -->
+                 <div class="flex justify-evenly items-center pt-2">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-thumbs-up text-[20px] text-gray-500"></i>
+                    <h3 class="uppercase text-gray-500">like</h3>
+                  </div>
+                   <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-comment text-[20px] text-gray-500"></i>
+                    <h3 class="uppercase text-gray-500">comment</h3>
+                  </div>
+                   <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-share text-[20px] text-gray-500"></i>
+                    <h3 class="uppercase text-gray-500">share</h3>
+                  </div>
+                 </div>
+         </div>
+         <!-- end poster -->
+       </main>
+
+       <!-- side section -->
+        <div class="hidden sm:w-1/4 h-screen bg-gray-100 fixed top-0 right-0 p-6 overflow-y-auto mt-20 min-h-screen pb-24">
+          <h1 class="text-gray-500 font-semibold uppercase">sponsored</h1>
+
+            <!-- sponser one -->
+          <div class="flex gap-3 mt-4">
+            <img src="https://i.pinimg.com/1200x/4e/57/e3/4e57e349f7d9d70ee401149889284618.jpg" alt="img" class="w-30 rounded-lg">
+            <div>
+              <h2 class="text-[20px] font-semibold">lorem ipsum <br> dolor sit amet</h2>
+              <h3 class="text-[14px] text-gray-500">www.loremipsum.com</h3>
+            </div>
+          </div>
+
+             <!-- sponser two -->
+          <div class="flex gap-3 mt-4">
+            <img src="https://i.pinimg.com/1200x/b5/9e/02/b59e02a1c2840f4b9c5f83d380d175d3.jpg" alt="img" class="w-30 rounded-lg">
+            <div>
+              <h2 class="text-[20px] font-semibold">lorem ipsum <br> dolor sit amet</h2>
+              <h3 class="text-[14px] text-gray-500">www.loremipsum.com</h3>
+            </div>
+          </div>
+
+              <!-- birthday -->
+               <div class="mt-4 border-t-1 border-gray-300 pt-4 border-b-1 border-gray-300 pb-4">
+                <h1 class="uppercase font-semibold text-gray-500">birthdays</h1>
+                <div class="flex items-center gap-3 mt-3">
+                  <i class="fa-solid fa-cake-candles text-4xl text-blue-500"></i>
+                  <div>
+                    <h2 class="font-semibold text-[20px]">Haaruun Hassan Nuur</h2>
+                    <h2 class="text-gray-700">birthday is today</h2>
+                  </div>
+                </div>
+               </div>
+                <!-- contacts -->
+               <div>
+                  <!-- icons -->
+                  <div class="flex items-center justify-between mt-3">
+                    <h2 class="uppercase font-semibold text-gray-500">contact</h2>
+                    <div class="flex items-center gap-4 text-gray-500">
+                      <i class="fa-solid fa-magnifying-glass "></i>
+                      <i class="fa-solid fa-ellipsis text-[20px]"></i>
+                    </div>
+                  </div>
+
+                  <!-- contacts list -->
+                   <div>
+
+                    <div class="flex items-center gap-3 mt-4">
+                      <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg" alt="img" class="w-11 rounded-full border-3 border-green-500">
+                      <h2 class="font-semibold">Ina xasan Dhaqtar</h2>
+                    </div>
+                      <div class="flex items-center gap-3 mt-4">
+                      <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg" alt="img" class="w-11 rounded-full border-3 border-green-500">
+                      <h2 class="font-semibold">Ina xasan Dhaqtar</h2>
+                    </div>
+                      <div class="flex items-center gap-3 mt-4">
+                      <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg" alt="img" class="w-11 rounded-full border-3 border-green-500">
+                      <h2 class="font-semibold">Ina xasan Dhaqtar</h2>
+                    </div>
+                      <div class="flex items-center gap-3 mt-4">
+                      <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg" alt="img" class="w-11 rounded-full border-3 border-green-500">
+                      <h2 class="font-semibold">Ina xasan Dhaqtar</h2>
+                    </div>
+                      <div class="flex items-center gap-3 mt-4">
+                      <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg" alt="img" class="w-11 rounded-full border-3 border-green-500">
+                      <h2 class="font-semibold">Ina xasan Dhaqtar</h2>
+                    </div>
+                      <div class="flex items-center gap-3 mt-4">
+                      <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg" alt="img" class="w-11 rounded-full border-3 border-green-500">
+                      <h2 class="font-semibold">Ina xasan Dhaqtar</h2>
+                    </div>
+                      <div class="flex items-center gap-3 mt-4">
+                      <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg" alt="img" class="w-11 rounded-full border-3 border-green-500">
+                      <h2 class="font-semibold">Ina xasan Dhaqtar</h2>
+                    </div>
+                      <div class="flex items-center gap-3 mt-4">
+                      <img src="https://i.pinimg.com/1200x/6e/59/95/6e599501252c23bcf02658617b29c894.jpg" alt="img" class="w-11 rounded-full border-3 border-green-500">
+                      <h2 class="font-semibold">Ina xasan Dhaqtar</h2>
+                    </div>
+                   </div>
+               </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
